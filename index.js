@@ -12,7 +12,7 @@ button.addEventListener('click', addScore)
 
 function addScore() {
     localStorage.setItem('scoresv', scoreint)
-    scoreint = Number(localStorage.getItem('scoresv'))
+    scoreint = Math.floor(localStorage.getItem('scoresv'))
     league.textContent = `League: ${league_value}`
     if(scoreint == 20){
         button_img.setAttribute('src', `images/${imgsReplaced}.jpg`)
