@@ -1,7 +1,7 @@
 let button = document.getElementById("button")
 let button_img = document.getElementById("button-img")
 let score = document.getElementById("score")
-let scoreint = localStorage.getItem('scoresv')
+let scoreint = 0
 let scaleToReplace = `${300}px`
 let imgsReplaced = 1
 let league = document.getElementById("league")
@@ -11,6 +11,7 @@ let ifWin = false
 button.addEventListener('click', addScore)
 
 function addScore() {
+    scoreint = localStorage.getItem('scoresv')
     localStorage.setItem('scoresv', scoreint)
     league.textContent = `League: ${league_value}`
     if(scoreint == 20){
