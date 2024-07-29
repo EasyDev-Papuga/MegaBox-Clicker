@@ -11,8 +11,8 @@ let ifWin = false
 button.addEventListener('click', addScore)
 
 function addScore() {
-    localStorage.setItem('scoreint', scoreint);
-    scoreint = localStorage.getItem('scoreint');
+    localStorage.setItem('scoresv', toString(scoreint))
+    scoreint = localStorage.getItem('scoresv')
     league.textContent = `League: ${league_value}`
     if(scoreint == 20){
         button_img.setAttribute('src', `images/${imgsReplaced}.jpg`)
