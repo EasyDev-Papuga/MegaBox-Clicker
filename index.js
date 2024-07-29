@@ -11,7 +11,7 @@ let scoreint = 0
 button.addEventListener('click', addScore)
 function addScore() {
     if(localStorage.getItem('scoresv')){
-        scoreint = Number.apply(localStorage.getItem('scoresv'))
+        scoreint = Number(localStorage.getItem('scoresv'))
     }
     league.textContent = `League: ${league_value}`
     if(scoreint == 20){
