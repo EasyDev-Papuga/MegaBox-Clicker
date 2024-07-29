@@ -54,21 +54,21 @@ function addScore() {
     if(ifWin == false){
         scoreint += 1;
 
-        button_img.style.scale = 2.1
+        button_img.style.scale = 1.6
     
         setTimeout(() => {
             /*button.style.scale = 0.8*/
-            button_img.style.scale = 2.3
+            button_img.style.scale = 1.8
         }, 50)
 
         setTimeout(() => {
            /*button.style.scale = 0.9*/
-           button_img.style.scale = 2.5
+           button_img.style.scale = 2.0
         }, 50)
 
        setTimeout(() => {
            /*button.style.scale = 1.0*/
-           button_img.style.scale = 2.8
+           button_img.style.scale = 2.1
        }, 100)
 }
 
