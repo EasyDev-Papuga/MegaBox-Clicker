@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body{
+    background: #004dd1;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', sans-serif;
+    display: flex;
+}
+
+.container{
+    margin: 100px;
+    background-color: #00348f;
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 400px; height: 400px; 
+    background-color: #00276b;
+    border-radius: 50%; 
+    border: none;
+    margin-top: 40px;
+    margin-left: 25px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 30px;
+    position:static;
+}
+
+button>img{
+    scale: 2.8;
+}
+
+#score{
+    font-size: 50px;
+    color: white;
+    padding-left: 130px;
+}
+#league{
+    font-size: 30px;
+    color: white;
+    padding-left: 130px;
+    padding-bottom: 100px;
+}
