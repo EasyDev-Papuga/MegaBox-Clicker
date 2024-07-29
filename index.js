@@ -9,9 +9,10 @@ let league_value = "Boxes"
 let ifWin = false
 
 button.addEventListener('click', addScore)
-
 function addScore() {
-    scoreint = localStorage.getItem('scoresv')
+    if(localStorage.getItem('scoresv')){
+        scoreint = localStorage.getItem('scoresv')
+    }
     localStorage.setItem('scoresv', scoreint)
     league.textContent = `League: ${league_value}`
     if(scoreint == 20){
