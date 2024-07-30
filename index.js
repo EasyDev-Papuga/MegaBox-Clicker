@@ -16,6 +16,7 @@ function addScore() {
     if(scoreint >= 20 & scoreint <= 40){
         button_img.setAttribute('src', `images/1.jpg`)
         imgsReplaced += 1
+        console.log("ok")
     }
     if(scoreint == 40 & scoreint <= 60){
         button_img.setAttribute('src', `images/2.jpg`)
