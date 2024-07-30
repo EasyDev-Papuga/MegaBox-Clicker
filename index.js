@@ -15,33 +15,27 @@ function addScore() {
     league.textContent = `League: ${league_value}`
     if(scoreint >= 20 & scoreint <= 40){
         button_img.setAttribute('src', `images/1.jpg`)
-        imgsReplaced += 1
         console.log("ok")
     }
     if(scoreint >= 40 & scoreint <= 60){
         button_img.setAttribute('src', `images/2.jpg`)
-        imgsReplaced += 1
     }
     if(scoreint >= 60 & scoreint <= 80){
         button_img.setAttribute('src', `images/3.jpg`)
-        imgsReplaced += 1
     }
     if(scoreint >= 80 & scoreint <= 100){
         button_img.setAttribute('src', `images/4.jpg`)
-        imgsReplaced += 1
         league_value = "Star Drops"
         button_img.setAttribute('width', 91)
         button_img.setAttribute('height', 90)
     }
     if(scoreint >= 100 & scoreint <= 120){
         button_img.setAttribute('src', `images/5.jpg`)
-        imgsReplaced += 1
         league_value = "Monster Eggs"
         league.style.setProperty('padding-left', `${70}px`)
     }
     if(scoreint >= 120 & scoreint <= 140){
         button_img.setAttribute('src', `images/6.jpg`)
-        imgsReplaced += 1
         league_value = "Mega Pig"
     }
     if(scoreint >= 140){
