@@ -13,37 +13,37 @@ function addScore() {
         scoreint = parseInt(localStorage.getItem('scoresv'))
     }
     league.textContent = `League: ${league_value}`
-    if(scoreint == 20){
+    if(scoreint >= 20 & scoreint <= 40){
         button_img.setAttribute('src', `images/1.jpg`)
         imgsReplaced += 1
     }
-    if(scoreint == 40){
+    if(scoreint == 40 & scoreint <= 60){
         button_img.setAttribute('src', `images/2.jpg`)
         imgsReplaced += 1
     }
-    if(scoreint == 60){
+    if(scoreint == 60 & scoreint <= 80){
         button_img.setAttribute('src', `images/3.jpg`)
         imgsReplaced += 1
     }
-    if(scoreint == 80){
+    if(scoreint == 80 & scoreint <= 100){
         button_img.setAttribute('src', `images/4.jpg`)
         imgsReplaced += 1
         league_value = "Star Drops"
         button_img.setAttribute('width', 91)
         button_img.setAttribute('height', 90)
     }
-    if(scoreint == 100){
+    if(scoreint == 100 & scoreint <= 120){
         button_img.setAttribute('src', `images/5.jpg`)
         imgsReplaced += 1
         league_value = "Monster Eggs"
         league.style.setProperty('padding-left', `${70}px`)
     }
-    if(scoreint == 120){
+    if(scoreint == 120 & scoreint <= 140){
         button_img.setAttribute('src', `images/6.jpg`)
         imgsReplaced += 1
         league_value = "Mega Pig"
     }
-    if(scoreint == 140){
+    if(scoreint >= 140){
         league_value = "You Win!"
         ifWin = true
         scoreint = "Max"
