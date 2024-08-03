@@ -6,6 +6,8 @@ let league = document.getElementById("league")
 let league_value = "Boxes"
 let ifWin = false
 let scoreint = 0
+let sound = new Audio()
+sound.src = './audio/sound.wav'
 
 button.addEventListener('click', addScore)
 function addScore() {
@@ -46,6 +48,7 @@ function addScore() {
     }
 
     if(ifWin == false){
+        sound.play()
         scoreint += 1;
         localStorage.setItem('scoresv', scoreint)
 
